@@ -7,7 +7,14 @@ from datetime import datetime
 
 
 class BaseModel():
-    """"Defines all commont attributes and methods for the classes."""
+    """"
+    Defines all common attributes and methods for the classes.
+
+    Attributes:
+        id (str): Unique identifier for each instance of BaseModel.
+        created_at (datetime): The datetime when the intance is created.
+        updated_at (datetime): The datetime when the instance is modified.
+    """
 
     def __init__(self):
         """Initializes a new instance of BaseModel"""
