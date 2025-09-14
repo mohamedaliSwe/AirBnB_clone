@@ -25,10 +25,6 @@ class HBNBCommand(cmd.Cmd):
         print("")
         return True
 
-    def do_help(self, arg):
-        """List available commands using 'help' or 'help <command>'"""
-        return super().do_help(arg)
-
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
