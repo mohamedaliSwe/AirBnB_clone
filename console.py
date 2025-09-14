@@ -12,17 +12,22 @@ class HBNBCommand(cmd.Cmd):
     """
     prompt = "(hbnb) "
 
+    def emptyline(self):
+        """Do nothing on emptyline input"""
+        pass
+
     def do_quit(self, arg):
         """Quit command to exit the program."""
         return True
 
     def do_EOF(self, arg):
         """EOF signal to exit the program."""
+        print("")
         return True
 
-    def emptyline(self):
-        """Do nothing on emptyline input"""
-        pass
+    def do_help(self, arg):
+        """List available commands using 'help' or 'help <command>'"""
+        return super().do_help(arg)
 
 
 if __name__ == "__main__":
