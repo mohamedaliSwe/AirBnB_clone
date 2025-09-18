@@ -8,10 +8,18 @@ class HBNBCommand(cmd.Cmd):
     HBNBCommand is the command-line interface (CLI) for the AirBnB clone.
     It allows users to create and manage instances of different models.
     """
-    prompt = "(hbnb) "
+    prompt = '(hbnb) '
+
+    def do_EOF(self, arg):
+        """Exits console"""
+        return True
+
+    def emptyline(self):
+        """overwriting the emptyline method """
+        return False
 
     def do_quit(self, arg):
-        """Quit command to exit the program."""
+        """Quit command to exit the program"""
         return True
 
 
