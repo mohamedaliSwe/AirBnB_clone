@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 """
-Defines the HBnB console.
+Command interpreter for the AirBnB clone Project
 """
 import cmd
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter.
-    Attributes:
-        prompt (str): The command prompt.
     """
-
+    HBNBCommand is the command-line interface (CLI) for the AirBnB clone.
+    It allows users to create and manage instances of different models.
+    """
     prompt = "(hbnb) "
 
     def emptyline(self):
